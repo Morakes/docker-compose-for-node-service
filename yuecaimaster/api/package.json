@@ -1,0 +1,36 @@
+{
+  "name": "koa-oil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "apidoc": "^0.28.1",
+    "await-to-js": "^3.0.0",
+    "cron": "^1.8.2",
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-log4": "^2.3.2",
+    "koa-static": "^5.0.0",
+    "koa-xml-body": "^2.2.0",
+    "koa2-cors": "^2.0.6",
+    "mysql2": "^2.2.5",
+    "request": "^2.88.2",
+    "sequelize": "^6.6.2",
+    "tenpay": "^2.1.18",
+    "ws": "^7.4.5"
+  },
+  "nodemonConfig": {
+    "script": "app.js",
+    "exec": "apidoc -i server -o public/doc && node",
+    "ignore": "public/*"
+  }
+}

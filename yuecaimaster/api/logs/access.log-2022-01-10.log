@@ -1,0 +1,5 @@
+[2022-01-10T16:57:52.123] [INFO] access - ::1 - - "GET /doc/vendor/bootstrap.min.css.map HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+[2022-01-10T17:34:55.499] [INFO] access - ::1 - - "GET / HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+[2022-01-10T17:34:55.530] [INFO] access - ::1 - - "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+[2022-01-10T17:34:57.208] [INFO] access - ::1 - - "GET / HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
+[2022-01-10T17:35:15.705] [INFO] access - ::1 - - "GET /example HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36"
