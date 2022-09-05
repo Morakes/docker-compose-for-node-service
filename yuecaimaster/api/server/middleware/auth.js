@@ -24,12 +24,10 @@ var auth = {
         await next()
         return
       }
+      const skipUrl = ["doc", "img", "applets", "dist"]
       if (
         allowUrl.indexOf(ctx.request.url.split('?')[0]) == -1 
-        &&ctx.request.url.split("/")[1] != "doc"  
-        &&ctx.request.url.split("/")[1] !='img'
-        &&ctx.request.url.split("/")[1] !='applets'
-        &&ctx.request.url.split("/")[1] !='dist'
+        &&!skipUrl.includes(ctx.request.url.split("/")[1])
       ) {
         if (!ctx.request.header.authorization) {
           ctx.body = { code: 110, msg: "token无效" }
