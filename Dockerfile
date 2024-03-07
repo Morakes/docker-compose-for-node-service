@@ -6,13 +6,13 @@ COPY ./yuecaimaster .
 
 WORKDIR /usr/local/workspace/web
 
-RUN npm run install \ 
+RUN npm install \ 
     && npm run build \
     && cp -r ./dist ../api/public
 
 WORKDIR /usr/local/workspace/api
 
-RUN npm run install
+RUN npm install
 
 EXPOSE 3100
 
