@@ -6,15 +6,15 @@ COPY ./yuecaimaster .
 
 WORKDIR /usr/local/workspace/web
 
-RUN yarn install \ 
-    && yarn build \
+RUN npm run install \ 
+    && npm run build \
     && cp -r ./dist ../api/public
 
 WORKDIR /usr/local/workspace/api
 
-RUN yarn install
+RUN npm run install
 
 EXPOSE 3100
 
-CMD [ "yarn","serve" ]
+CMD [ "run","serve" ]
 
