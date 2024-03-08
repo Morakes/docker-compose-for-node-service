@@ -16,5 +16,5 @@ RUN npm install
 
 EXPOSE 3100
 
-CMD [ "run","serve" ]
+CMD [ "npm", "run","serve" ]
 
